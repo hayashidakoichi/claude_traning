@@ -2,3 +2,7 @@ node_modules/
 .DS_Store
 .claude/
 old/
+proposal/
+.playwright-mcp/
+workspace/
+旧トレーニングメニュー/
