@@ -6,18 +6,6 @@
 ![Clawd — Claude Code 公式マスコット](https://storage.googleapis.com/sm-artworks/5719926a-04ae-4afb-9925-f1f4521d38ce/large.png?cacheFor=b1c948c6194db63359b0f8564d4a7eed)
 *「Clawd」— Claude Code の公式マスコットキャラクター（8ビットピクセルアートのカニ）出典: [Sticker Mule — Claude Code 公式ストア](https://www.stickermule.com/claudecode)*
 
-## 自己紹介
-
-**林田 幸一（はやしだ こういち）**
-
-| 経歴 | 内容 |
-|---|---|
-| SE・ITコンサル | NTTデータ → スカイライトコンサルティング（ITコンサル）。ZOZO TOWN などのITベンチャーへ技術コンサル |
-| 起業・経営 | Ruby 専門の開発会社（株）Cuon を創業。30名体制に成長後、上場企業へ売却 |
-| 人事評価クラウド | （株）あしたのチームで CTO として人事評価クラウドをゼロから構築。5,000社導入 |
-| スタートアップ支援 | バトンズ・Standage・PricingData 等のCTO代行。エンジェル投資先5社 |
-| 現在 | **Claude Code 中心の AI 駆動開発を専門とする** |
-
 ## 概要
 
 | 項目 | 内容 |
