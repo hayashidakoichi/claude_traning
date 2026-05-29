@@ -6,6 +6,7 @@
 
 | ファイル | 内容 |
 |---|---|
+| [Claude_Code_中級者研修_ForMac.md](Claude_Code_中級者研修_ForMac.md) | **中級者研修（Mac・全2回／各3時間）** — チャットを卒業して AI エージェントとして使うための研修資料。第1回（座学・Mac セットアップ・記憶機能）、第2回（Skills × MCP × スケジュールによる業務自動化）。受講者の3つの質問を学習の軸に構成 |
 | [ClaudeCode勉強会.md](ClaudeCode勉強会.md) | **座学資料（講義用）** — Claude Code の概要、3大AI比較、セキュリティ、料金プラン、基本操作リファレンス、付録（CLAUDE.mdテンプレート・settings.json設定・コマンド一覧など） |
 | [実践トレーニング_macOS版.md](実践トレーニング_macOS版.md) | **実習資料（1日目・macOS + ターミナル版）** — macOS 標準のターミナル.app から Homebrew・Node.js・Claude Code をインストールし、`open` / QuickLook など macOS 標準機能を使ったドキュメント確認まで扱う |
 | [実践トレーニング_VSCode版.md](実践トレーニング_VSCode版.md) | **実習資料（1日目・Windows + VS Code 版）** — VS Code のインストール、Git Bash・Claude Code 拡張機能のセットアップ、初回ログイン、競合調査や PDF 変換などのはじめての操作 |
