@@ -568,6 +568,23 @@ Claude Code が作る文書の多くは **Markdown（.md）** という形式。
 
 > **TIPS** — 「Claude Code に文書を作らせる → 左パネルでファイルをクリック → `Ctrl + Shift + V` で確認」が本研修の基本サイクル。この 3 ステップだけ覚えれば十分。
 
+**5-5. Markdown・Marp 用の拡張機能を入れる**
+
+標準のプレビューだけでも十分使えるが、次の 2 つの拡張機能を入れておくと、Claude Code が作る文書・スライドをさらに快適に閲覧できる。インストール方法は日本語化のときと同じ（左側のブロックのようなアイコン → 検索 → 「インストール」をクリック）。
+
+| 拡張機能 | 検索キーワード | 何ができるようになる？ |
+|---|---|---|
+| **Markdown Preview Enhanced** | `Markdown Preview Enhanced` | Markdown のプレビューが強化される。目次の自動表示、図表の描画、PDF への書き出しなどに対応 |
+| **Marp for VS Code** | `Marp` | **Marp 形式**の Markdown をスライドとしてプレビューできる。PDF や PowerPoint 形式への書き出しも可能 |
+
+> **Marp（マープ）とは** — Markdown からプレゼン用スライドを作る仕組みのこと。ファイルの先頭に `marp: true` と書かれた Markdown ファイルが Marp 形式で、Claude Code に「この内容をスライドにして」と頼むとこの形式で作ってくれる。
+
+1. 拡張機能アイコンをクリックし、検索欄に「`Markdown Preview Enhanced`」と入力してインストール
+2. 続けて検索欄に「`Marp`」と入力し、「Marp for VS Code」（発行元: Marp team）をインストール
+3. Marp 形式の `.md` ファイルを開いて `Ctrl + Shift + V` を押すと、通常の文書ではなく**スライドとして**プレビューされる
+
+> **TIPS** — どちらの拡張機能も「閲覧」には設定不要で、入れるだけで使える。プレビューがスライドにならない場合は、ファイル先頭に `marp: true` の記述があるかを確認しよう。
+
 ## 基本操作リファレンス
 
 ![Claude Code VS Code 拡張機能](https://mintcdn.com/claude-code/-YhHHmtSxwr7W8gy/images/vs-code-extension-interface.jpg?fit=max&auto=format&n=-YhHHmtSxwr7W8gy&q=85&s=300652d5678c63905e6b0ea9e50835f8)
