@@ -562,9 +562,23 @@ claude
 
 Claude Code が作る文書の多くは **Markdown（.md）** という形式。VS Code なら整形された状態で読める。
 
+> **markdown（マークダウン）ファイルとは？**
+> テキストに簡単な記号を付けて見出しや箇条書きを表現する軽量な文書形式（拡張子 `.md`）。本研修では、Claude Code に作らせるドキュメント（議事録・調査レポート・提案書の下書きなど）はすべて Markdown で扱う。
+>
+> **なぜ Markdown を使うのか**
+> - **AI と相性がいい** — Word や PowerPoint と違い中身は記号付きのテキストなので、Claude が生成・修正しやすい
+> - **専用ソフトが不要** — メモ帳でも VS Code でも開けて、Windows 標準環境だけで完結する
+> - **PDF・Word・HTML へ変換しやすい** — `pandoc` 等のツールで一発変換でき、用途別に使い分けられる
+> - **差分が見やすい** — テキストなので、修正前と修正後の違いが行単位ではっきり分かる
+> - **再利用しやすい** — 同じ Markdown から PDF・社内 Wiki・メール本文と複数のアウトプットに展開できる
+
+VS Code は標準で Markdown プレビュー機能を持っているため、追加のインストールは不要。
+
 1. エクスプローラー（左パネル）で `.md` ファイルをクリックして開く
-2. `Ctrl + Shift + V` を押すと、整形されたプレビュー画面に切り替わる
-3. 編集しながら見たい場合は、エディタ右上の「プレビューを横に表示」アイコン（虫眼鏡＋本のアイコン）をクリックすると、左に原文・右にプレビューの 2 画面になる
+2. `Ctrl + Shift + V` を押すと、整形されたプレビュー画面が別タブで開く
+3. 編集しながら見たい場合は `Ctrl + K` → `V`（Ctrl+K を押して離してから V）で、左に原文・右にプレビューの 2 画面になる（エディタ右上の「プレビューを横に表示」アイコンでも同じ）
+
+Claude Code に修正を依頼するたびに、左側のテキストと右側のプレビューが自動更新されるため、編集と確認を同じ画面で完結できる。
 
 > **TIPS** — 「Claude Code に文書を作らせる → 左パネルでファイルをクリック → `Ctrl + Shift + V` で確認」が本研修の基本サイクル。この 3 ステップだけ覚えれば十分。
 
@@ -589,6 +603,22 @@ Claude Code が作る文書の多くは **Markdown（.md）** という形式。
 
 ![Claude Code VS Code 拡張機能](https://mintcdn.com/claude-code/-YhHHmtSxwr7W8gy/images/vs-code-extension-interface.jpg?fit=max&auto=format&n=-YhHHmtSxwr7W8gy&q=85&s=300652d5678c63905e6b0ea9e50835f8)
 *出典: [Claude Code 公式ドキュメント — Use Claude Code in VS Code](https://code.claude.com/docs/en/vs-code)*
+
+### VS Code の基本画面
+
+![VS Code](https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png)
+*出典: [Microsoft — VS Code User Interface](https://code.visualstudio.com/docs/getstarted/userinterface)*
+
+VS Code の画面は大きく 4 つのエリアに分かれている。それぞれの名前と役割を覚えておくと、この後の説明がスムーズに理解できる。
+
+| 場所 | 名前 | 役割 |
+|---|---|---|
+| 左端のアイコン列 | アクティビティバー | エクスプローラー・検索・拡張機能などの切り替え |
+| 左パネル | サイドバー | ファイル一覧や検索結果を表示 |
+| 中央 | エディタ | ファイルの内容を表示・編集 |
+| 下部 | ターミナル | コマンドを実行する場所（Claude Code もここで動く） |
+
+> 配色を変えたい場合は、左下の「歯車アイコン」→「テーマ」→「配色のテーマ」から好みのテーマを選べる。
 
 ### エラーが出ても大丈夫
 
