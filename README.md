@@ -8,7 +8,7 @@
 |---|---|
 | [Claude_Code_中級者研修_ForMac.md](Claude_Code_中級者研修_ForMac.md) | **中級者研修（Mac・全2回／各3時間）** — チャットを卒業して AI エージェントとして使うための研修資料。第1回（座学・Mac セットアップ・記憶機能）、第2回（Skills × MCP × スケジュールによる業務自動化）。受講者の3つの質問を学習の軸に構成 |
 | [Claude_Code_中級者研修_ワークフローの作り方.md](Claude_Code_中級者研修_ワークフローの作り方.md) | **ワークフローの作り方（QA3 実践前の座学）** — 第2回 QA3 の実践ハンズオンに入る前の座学。スキルとワークフローの違い（軸の整理）、静的／動的ワークフローの違い、動的WFが防ぐ3つの失敗と代表パターン、見分け方を平易に解説。後半は `workflow-judge` プラグインで自分の業務を判定し、ハイブリッド構成を組み上げるハンズオン |
-| [Claude_code_初級者研修_for_Windows.md](Claude_code_初級者研修_for_Windows.md) | **初級者研修（Windows 版・座学 + セットアップ）** — コンサルタント向けの座学資料。Claude Code の概要、3大AI比較、最新モデル（Fable 5 / Mythos 5）、セキュリティ、料金プラン、Windows でのセットアップ手順（PowerShell + Git Bash + VS Code、画像付き）、付録（CLAUDE.md テンプレート・settings.json 設定・コマンド一覧など） |
+| [Claude_code_コンサルタント向け研修_for_Windows.md](Claude_code_コンサルタント向け研修_for_Windows.md) | **Claude Code をコンサルタントの武器にする研修（Windows 版・座学 + セットアップ）** — コンサルタント向けの座学資料。Claude Code の概要、3大AI比較、最新モデル（Fable 5 / Mythos 5）、セキュリティ、料金プラン、Windows でのセットアップ手順（PowerShell + Git Bash + VS Code、画像付き）、付録（CLAUDE.md テンプレート・settings.json 設定・コマンド一覧など） |
 | [ClaudeCode勉強会.md](ClaudeCode勉強会.md) | **座学資料（講義用）** — Claude Code の概要、3大AI比較、セキュリティ、料金プラン、基本操作リファレンス、付録（CLAUDE.mdテンプレート・settings.json設定・コマンド一覧など） |
 | [実践トレーニング_macOS版.md](実践トレーニング_macOS版.md) | **実習資料（1日目・macOS + ターミナル版）** — macOS 標準のターミナル.app から Homebrew・Node.js・Claude Code をインストールし、`open` / QuickLook など macOS 標準機能を使ったドキュメント確認まで扱う |
 | [実践トレーニング_VSCode版.md](実践トレーニング_VSCode版.md) | **実習資料（1日目・Windows + VS Code 版）** — VS Code のインストール、Git Bash・Claude Code 拡張機能のセットアップ、初回ログイン、競合調査や PDF 変換などのはじめての操作 |
