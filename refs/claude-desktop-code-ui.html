@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Claude Desktop「コード」タブの画面に番号を重ねた図 */
+  body {
+    margin: 0; width: 1262px; background: #ffffff; color: #1f2933;
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  }
+  h1 { font-size: 26px; margin: 24px 24px 4px; }
+  .lead { font-size: 15px; color: #5b6673; margin: 0 24px 14px; }
+
+  /* 画像と重ね描きの土台 */
+  .stage { position: relative; width: 1262px; height: 973px; }
+  .stage img { width: 1262px; height: 973px; display: block; }
+
+  /* 部品を囲む枠 */
+  .box {
+    position: absolute; border: 2.5px solid #c56a3a; border-radius: 6px;
+    box-sizing: border-box; pointer-events: none;
+  }
+  .box.dash { border-style: dashed; }
+  /* 番号のバッジ */
+  .n {
+    position: absolute; width: 26px; height: 26px; border-radius: 50%;
+    background: #c56a3a; color: #fff; font-size: 15px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 2.5px #fff;
+  }
+</style>
+</head>
+<body>
+  <h1>Claude Desktop「コード」タブの画面構成</h1>
+  <p class="lead">番号は本文の表と対応している</p>
+  <div class="stage">
+    <img src="claude-desktop-code-screenshot.png" alt="Claude Desktop のコードタブ">
+
+    <!-- 1 タブ切り替え -->
+    <div class="box" style="left:238px; top:42px; width:62px; height:28px;"></div>
+    <div class="n" style="left:206px; top:43px;">1</div>
+
+    <!-- 2 新規作成・検索 -->
+    <div class="box" style="left:64px; top:80px; width:230px; height:52px;"></div>
+    <div class="n" style="left:300px; top:93px;">2</div>
+
+    <!-- 3 Artifacts・カスタマイズ -->
+    <div class="box" style="left:64px; top:136px; width:230px; height:58px;"></div>
+    <div class="n" style="left:300px; top:152px;">3</div>
+
+    <!-- 4 最近の項目（セッション一覧） -->
+    <div class="box" style="left:64px; top:236px; width:230px; height:28px;"></div>
+    <div class="n" style="left:300px; top:237px;">4</div>
+
+    <!-- 5 表示切り替えボタン -->
+    <div class="box" style="left:1094px; top:42px; width:112px; height:28px;"></div>
+    <div class="n" style="left:1062px; top:43px;">5</div>
+
+    <!-- 6 チャット領域 -->
+    <div class="box dash" style="left:318px; top:78px; width:770px; height:480px;"></div>
+    <div class="n" style="left:1046px; top:90px;">6</div>
+
+    <!-- 7 プロンプト入力欄 -->
+    <div class="box" style="left:432px; top:828px; width:372px; height:42px;"></div>
+    <div class="n" style="left:400px; top:838px;">7</div>
+
+    <!-- 8 実行環境（このコンピューター） -->
+    <div class="box" style="left:440px; top:871px; width:146px; height:24px;"></div>
+    <div class="n" style="left:408px; top:900px;">8</div>
+
+    <!-- 9 作業フォルダ -->
+    <div class="box" style="left:592px; top:871px; width:66px; height:24px;"></div>
+    <div class="n" style="left:612px; top:900px;">9</div>
+
+    <!-- 10 モデル選択（チップと開いたメニュー） -->
+    <div class="box" style="left:941px; top:871px; width:70px; height:24px;"></div>
+    <div class="box" style="left:536px; top:586px; width:476px; height:282px;"></div>
+    <div class="n" style="left:909px; top:900px;">10</div>
+    <div class="n" style="left:504px; top:588px;">10</div>
+
+    <!-- 11 権限モード -->
+    <div class="box" style="left:1012px; top:871px; width:44px; height:24px;"></div>
+    <div class="n" style="left:1062px; top:872px;">11</div>
+  </div>
+</body>
+</html>
