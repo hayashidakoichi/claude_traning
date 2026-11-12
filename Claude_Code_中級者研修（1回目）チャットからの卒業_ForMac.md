@@ -124,7 +124,7 @@ Claude には使い方の異なる 4 つの入り口があります。**結論�
 
 ### 1-3. 「AI モデル」と「AI エージェント」の違い
 
-ニュースで見る **Claude Opus** や **Claude Sonnet** は「AI モデル」＝**頭脳**にあたる部分です（2026 年現在の主なモデルは Fable 5.1 / Opus 5.5 / Sonnet 5.5 / Haiku 5.5）。一方 **Claude Code** は、その頭脳に**手足を与えた AI エージェント**です。
+ニュースで見る **Claude Opus** や **Claude Sonnet** は「AI モデル」＝**頭脳**にあたる部分です（2026 年現在の主なモデルは Fable 5.2 / Opus 5.5 / Sonnet 5.5 / Haiku 5.5）。一方 **Claude Code** は、その頭脳に**手足を与えた AI エージェント**です。
 
 | | AI モデル（Claude Opus / Sonnet / Haiku 等） | AI エージェント（Claude Code） |
 |---|---|---|

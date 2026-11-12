@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Web 版（チャット AI）と Claude Code（AI エージェント）の進み方の違い */
+  body {
+    margin: 0; width: 1600px; background: #ffffff; color: #1f2933;
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  }
+  .wrap { padding: 36px 44px 40px; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  .lead { font-size: 17px; color: #5b6673; margin: 0 0 28px; }
+
+  .cols { display: flex; gap: 28px; align-items: stretch; }
+  .col { flex: 1; border: 2px solid #d7dde5; border-radius: 14px; padding: 20px 20px 22px; background: #fbfcfe; }
+  .col.agent { border-color: #c56a3a; background: #fff9f5; }
+  .col h2 { font-size: 24px; margin: 0 0 4px; }
+  .col.agent h2 { color: #b8521f; }
+  .sub { font-size: 15px; color: #5b6673; margin: 0 0 14px; }
+  .turns { display: inline-block; font-size: 15px; font-weight: 700; padding: 5px 12px; border-radius: 999px; background: #eef2f7; margin-bottom: 16px; }
+  .col.agent .turns { background: #fbe7da; color: #b8521f; }
+
+  /* 手順の箱 */
+  .step { display: flex; align-items: flex-start; gap: 10px; background: #fff; border: 1px solid #dbe2ea; border-radius: 10px; padding: 11px 13px; font-size: 16px; line-height: 1.5; }
+  .who { flex: none; font-size: 13px; font-weight: 700; padding: 3px 9px; border-radius: 6px; color: #fff; margin-top: 1px; }
+  .who.you { background: #2f6fa8; }
+  .who.ai { background: #c56a3a; }
+  .arrow { text-align: center; color: #9aa5b1; font-size: 19px; line-height: 1; margin: 5px 0; }
+  .loop { text-align: center; font-size: 14px; color: #5b6673; margin: 8px 0 0; }
+
+  /* 成果物の置き場所 */
+  .foot { margin-top: 16px; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.6; background: #eef2f7; }
+  .col.agent .foot { background: #fbe7da; }
+  .foot b { display: block; font-size: 13px; color: #6b7684; margin-bottom: 3px; }
+  .col.agent .foot b { color: #a9603a; }
+
+  .legend { margin-top: 20px; font-size: 15px; color: #5b6673; }
+  .key { display: inline-block; font-size: 13px; font-weight: 700; padding: 3px 9px; border-radius: 6px; color: #fff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>同じ指示を出したとき、作業の進み方はこう変わる</h1>
+  <p class="lead">成果物の出来ではなく「誰が、どこで手を動かすか」が違う</p>
+
+  <div class="cols">
+    <div class="col">
+      <h2>Claude Web 版（チャット AI）</h2>
+      <p class="sub">相談相手。手を動かすのは自分</p>
+      <div class="turns">あなたの出番：4 回（ほぼ毎手番）</div>
+
+      <div class="step"><span class="who you">あなた</span>資料を 1 つずつアップロードする</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who ai">Claude</span>チャットの中に回答を書く</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who you">あなた</span>結果をダウンロードして保存する</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who you">あなた</span>直したい箇所を伝える</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who ai">Claude</span>作り直して、もう一度チャットに出す</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who you">あなた</span><b>また</b>ダウンロードし直す</div>
+      <p class="loop">↻ 直すたびに、この往復を繰り返す</p>
+
+      <div class="foot"><b>成果物の置き場所</b>チャットの中。手元に残すにはダウンロードが必要で、直すたびに古いファイルが増えていく</div>
+    </div>
+
+    <div class="col agent">
+      <h2>Claude Code（AI エージェント）</h2>
+      <p class="sub">作業者。手を動かすのは Claude</p>
+      <div class="turns">あなたの出番：3 回（伝える・承認する・確認する）</div>
+
+      <div class="step"><span class="who you">あなた</span>ゴールを伝える（資料はフォルダに置くだけ）</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who ai">Claude</span>フォルダの中の資料を自分で読む</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who ai">Claude</span>作業の計画を立てて見せる</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who you">あなた</span>計画を確認して承認する</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who ai">Claude</span>ファイルを作る・コマンドを実行する（複数の手順を自分で進める）</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who you">あなた</span>できたファイルを読み、直したい点を伝える</div>
+      <div class="arrow">▼</div>
+      <div class="step"><span class="who ai">Claude</span><b>同じファイル</b>をその場で更新する</div>
+
+      <div class="foot"><b>成果物の置き場所</b>作業フォルダの中。ダウンロード不要で、修正しても同じファイルが最新に保たれる</div>
+    </div>
+  </div>
+
+  <p class="legend"><span class="key" style="background:#2f6fa8">あなた</span> ＝ 人が手を動かす手番　／　<span class="key" style="background:#c56a3a">Claude</span> ＝ AI が手を動かす手番</p>
+</div>
+</body>
+</html>
